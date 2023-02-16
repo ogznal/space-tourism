@@ -60,16 +60,32 @@ const DestinationPage: NextPage = () => {
               className={`flex ${barlow_condensed.className} mb-4 w-full flex-row gap-x-4 font-light text-white`}
             >
               <li>
-                <DestinationButton value={0} handler={(e) => handleTab(e)} />
+                <DestinationButton
+                  value={0}
+                  active={currentDest}
+                  handler={(e) => handleTab(e)}
+                />
               </li>
               <li>
-                <DestinationButton value={1} handler={(e) => handleTab(e)} />
+                <DestinationButton
+                  value={1}
+                  active={currentDest}
+                  handler={(e) => handleTab(e)}
+                />
               </li>
               <li>
-                <DestinationButton value={2} handler={(e) => handleTab(e)} />
+                <DestinationButton
+                  value={2}
+                  active={currentDest}
+                  handler={(e) => handleTab(e)}
+                />
               </li>
               <li>
-                <DestinationButton value={3} handler={(e) => handleTab(e)} />
+                <DestinationButton
+                  value={3}
+                  active={currentDest}
+                  handler={(e) => handleTab(e)}
+                />
               </li>
             </ul>
             <h1

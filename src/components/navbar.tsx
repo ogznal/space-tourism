@@ -27,8 +27,10 @@ export const Navbar = ({ currentPage }: { currentPage: string }) => {
           <Link href="/">
             <li
               className={`flex items-center border-b-[3px] ${
-                currentPage == "home" ? "border-white" : "border-transparent"
-              } hover:border-[#979797] lg:h-24`}
+                currentPage == "home"
+                  ? "border-white"
+                  : "border-transparent hover:border-[#979797]"
+              } lg:h-24`}
             >
               <span className="mr-2 font-medium">00</span> Home
             </li>
@@ -38,8 +40,8 @@ export const Navbar = ({ currentPage }: { currentPage: string }) => {
               className={`flex items-center border-b-[3px] ${
                 currentPage == "destination"
                   ? "border-white"
-                  : "border-transparent"
-              } hover:border-[#979797] lg:h-24`}
+                  : "border-transparent hover:border-[#979797]"
+              } lg:h-24`}
             >
               <span className="mr-2 font-medium">01</span> Destination
             </li>
@@ -47,8 +49,10 @@ export const Navbar = ({ currentPage }: { currentPage: string }) => {
           <Link href="/crew">
             <li
               className={`flex items-center border-b-[3px] ${
-                currentPage == "crew" ? "border-white" : "border-transparent"
-              } hover:border-[#979797] lg:h-24`}
+                currentPage == "crew"
+                  ? "border-white"
+                  : "border-transparent hover:border-[#979797]"
+              } lg:h-24`}
             >
               <span className="mr-2 font-medium">02</span> Crew
             </li>
@@ -58,8 +62,8 @@ export const Navbar = ({ currentPage }: { currentPage: string }) => {
               className={`flex items-center border-b-[3px] ${
                 currentPage == "technology"
                   ? "border-white"
-                  : "border-transparent"
-              } hover:border-[#979797] lg:h-24`}
+                  : "border-transparent hover:border-[#979797]"
+              } lg:h-24`}
             >
               <span className="mr-2 font-medium">03</span> Technology
             </li>
