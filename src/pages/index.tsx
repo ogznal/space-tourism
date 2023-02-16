@@ -12,7 +12,7 @@ const barlow_condensed = Barlow_Condensed({
 
 const bellefair = Bellefair({ weight: "400", subsets: ["latin"] });
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       <Head>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         flex-col justify-between
         bg-[url('/assets/home/background-home-mobile.jpg')] bg-cover md:bg-[url('/assets/home/background-home-tablet.jpg')] lg:bg-[url('/assets/home/background-home-desktop.jpg')]"
       >
-        <Navbar />
+        <Navbar currentPage="home" />
         <section className="mb-16 flex h-full flex-row place-content-between items-end px-60">
           <div className="basis-1/3">
             <h5
@@ -58,4 +58,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;
