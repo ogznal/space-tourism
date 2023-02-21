@@ -1,5 +1,3 @@
-import React from "react";
-
 import data from "../../json/data.json";
 
 export const DestinationButton = ({
