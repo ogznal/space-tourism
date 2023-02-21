@@ -32,12 +32,12 @@ const DestinationPage: NextPage = () => {
       </Head>
       <main
         className="flex min-h-screen 
-        flex-col
+        flex-col justify-start
         bg-[url('/assets/destination/background-destination-mobile.jpg')] bg-cover md:bg-[url('/assets/destination/background-destination-tablet.jpg')] lg:bg-[url('/assets/destination/background-destination-desktop.jpg')]"
       >
         <Navbar currentPage="destination" />
         <PageTitle pNumber="01" pTitle="Pick your destination" />
-        <section className="m-auto flex w-3/4 flex-row">
+        <section className="mx-auto flex w-3/4 flex-row">
           <div className="flex basis-1/2 flex-col">
             <img
               className="h-96 w-96 self-center"

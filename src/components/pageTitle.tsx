@@ -14,7 +14,7 @@ export const PageTitle = ({
 }) => {
   return (
     <h1
-      className={`uppercase ${barlow_condensed.className} m-auto w-3/4 text-2xl font-light tracking-[0.16em] text-white`}
+      className={`uppercase ${barlow_condensed.className} mx-auto mb-10 w-3/4 text-2xl font-light tracking-[0.16em] text-white`}
     >
       <span
         className={`${barlow_condensed.className} mr-4 text-2xl font-bold text-white text-opacity-25`}

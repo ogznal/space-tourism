@@ -28,36 +28,34 @@ const CrewPage: NextPage = () => {
       </Head>
       <main
         className="flex min-h-screen 
-        flex-col
+        flex-col justify-start
         bg-[url('/assets/crew/background-crew-mobile.jpg')] bg-cover md:bg-[url('/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('/assets/crew/background-crew-desktop.jpg')]"
       >
         <Navbar currentPage="crew" />
         <PageTitle pNumber="02" pTitle="Meet your crew" />
-        <section className="m-auto flex w-3/4 flex-row">
-          <div className="flex basis-1/2 flex-col">
-            <section>
-              <h2
-                className={`text-3xl uppercase text-white text-opacity-50 ${bellefair.className} font-light`}
-              >
-                {data.crew[currentCrew]?.role}
-              </h2>
-              <h3
-                className={`${bellefair.className} text-5xl uppercase text-white`}
-              >
-                {data.crew[currentCrew]?.name}
-              </h3>
-              <p
-                className={`text-[#D0D6F9] ${barlow_condensed.className} font-light tracking-wide`}
-              >
-                {data.crew[currentCrew]?.bio}
-              </p>
-            </section>
-          </div>
-          <img
+        <section className="mx-auto flex w-3/4 flex-row">
+          <section className="flex basis-1/2 flex-col justify-center">
+            <h2
+              className={`text-3xl uppercase text-white text-opacity-50 ${bellefair.className} mb-4 font-light`}
+            >
+              {data.crew[currentCrew]?.role}
+            </h2>
+            <h3
+              className={`${bellefair.className} mb-8 text-5xl uppercase text-white`}
+            >
+              {data.crew[currentCrew]?.name}
+            </h3>
+            <p
+              className={`text-[#D0D6F9] ${barlow_condensed.className} font-light tracking-wide`}
+            >
+              {data.crew[currentCrew]?.bio}
+            </p>
+          </section>
+          {/* <img
             className="max-w-[514px] basis-1/2"
             src={data.crew[currentCrew]?.images.webp}
             alt={data.crew[currentCrew]?.name}
-          />
+          /> */}
         </section>
       </main>
     </>

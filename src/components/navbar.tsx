@@ -9,7 +9,7 @@ const barlow_condensed = Barlow_Condensed({
 
 export const Navbar = ({ currentPage }: { currentPage: string }) => {
   return (
-    <header className="relative ml-[55px] flex flex-row place-content-between items-center pt-10">
+    <header className="relative ml-[55px] mb-10 flex flex-row place-content-between items-center pt-10">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
         <g fill="none" fillRule="evenodd">
           <circle cx="24" cy="24" r="24" fill="#FFF" />
